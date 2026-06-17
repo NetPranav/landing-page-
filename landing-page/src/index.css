@@ -21,8 +21,11 @@
 
 body {
   background-color: var(--bg-primary);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
   color: var(--text-primary);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
