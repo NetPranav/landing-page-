@@ -213,6 +213,37 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* Detailed Sub-Steps Styling */
+.sub-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.sub-step {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--border-color);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.sub-step strong {
+  color: var(--text-primary);
+  margin-right: 0.25rem;
+}
+
+/* Hover effects matching the node colors */
+.tree-node:nth-child(2) .sub-step:hover { border-left-color: var(--factory-color); transform: translateX(4px); }
+.tree-node:nth-child(3) .sub-step:hover { border-left-color: var(--admin-color); transform: translateX(4px); }
+.tree-node:nth-child(4) .sub-step:hover { border-left-color: var(--driver-color); transform: translateX(4px); }
+.tree-node:nth-child(5) .sub-step:hover { border-left-color: var(--warehouse-color); transform: translateX(4px); }
+
 /* Call to Action Buttons */
 .node-cta {
   display: inline-block;
